@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
+<body>
+  <!-- <input class="numberInput" type="text"> -->
+  <p></p>
+  <Script>
+    const para = document.querySelector('p');
+    let answer = parseInt(prompt("Please enter the number you would like?"));
+    for (let i =1; i<= answer; i++) {
+      if (i%5 ==0 && i%3 == 0){
+        console.log(
+          "Fizzbuzz"
+        );
+        para.textContent += `xFizzbuzzx`;
+      }
+      else if(i%3 == 0) {
+        console.log("Fizz");
+        para.textContent += `Fizz`;
+      }
+      else if(i%5 == 0) {
+        console.log("Buzz");
+        para.textContent += `Buzz`;
+      }
+      else {
+        console.log(i);
+        para.textContent += i;
+      }
+    }
+  </Script>
+  
+<!-- 
+  <script>
+    const input = document.querySelector('.numberInput');
+    const para = document.querySelector('p');
+
+    function add7(num) {
+  return num += 7;
+}
+
+function multiply(num1, num2 = 10) {
+  return num1*num2;
+}
+
+function capitalize(string1) {
+    let teststring = string1.charAt(0).toUpperCase() + string1.slice(1).toLowerCase();
+  return teststring;
+}
+
+function returnslartletter(string1) {
+  return string1.charAt(string1.length-1)
+}
+
+input.addEventListener("change", () => {
+  const num = input.value;
+  if (isNaN(num)) {
+    para.textContent = returnslartletter(num);
+  } else {
+    para.textContent = `${num} added 7 is ${add7(num)}. `;
+    para.textContent += `${num} Multiplied is ${multiply(num)}. `;
+  
+  }
+}); -->
+
+  </script>
+</body>
+</html>
