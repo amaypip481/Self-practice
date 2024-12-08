@@ -1,0 +1,11 @@
+div {
+    margin-bottom: 10px;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}

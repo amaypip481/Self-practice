@@ -1,0 +1,65 @@
+/* .group1 ~ div  {
+    color: brown;
+} */
+
+/* a:link{
+    color: yellow;
+} */
+
+a:visited{
+    color: aquamarine;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+:active {
+    background-color: blue;
+}
+
+/* .parent :nth-child(1) {
+    color: orange;
+} */
+
+div::first-line {
+
+    font-weight: 800;
+
+}
+
+div::after {
+    content: "hola pola";
+}
+
+[href] {
+    color: pink;
+}
+
+a[href] {
+    color: red;
+}
+
+
+div[class *= "group2"] {
+    color: var(--main-bg, yellow);
+    border: var(--main-border);
+}
+:root {
+
+    --main-bg: red ;
+    --main-border: 1px solid red;
+    --gradientone: red;
+    --gradientTwo: blue;
+    --header: 13rem;
+--footer: 4px;
+
+    background: linear-gradient(90deg, var(--gradientone), var(--gradientTwo));
+    --main-height: calc(100vh - calc(var(--header) + var(--footer)))
+
+}
+
+.parent {
+    min-height: var(--main-height);
+    background-color: black;
+}

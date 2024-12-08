@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+       <fieldset>
+        <legend>Basic Details</legend>
+        <label for="firstName">
+            <span>Name: </span>
+      <strong><span aria-label="required">*</span></strong>
+        </label>
+        <input type="text" id="firstName" placeholder="Amay Singh" name="first_Name">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Singh" name="last_name">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="Age">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="Dob">
+        <button type="submit"> submit</button>
+       </fieldset>
+    <div>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" name="user_Email">
+        <label for="password" > password</label>
+        <input type="password" id="password" name="Password">
+        <label for="review">Review</label>
+        <textarea id="review" name="Review"></textarea>
+    </div>
+    <div>
+        <label for="carName">Car Name:</label>
+        <select name="car" id="carName">
+            <optgroup label="sedan">
+                <option value="City">City</option>
+                <option value="elcazar">Elcazar</option>
+                <option value="Honda">Honda</option>
+            </optgroup>
+            <optgroup label="SUV">
+                <option value="XUV700" selected>XUV700</option>
+                <option value="Ertiga">Ertiga</option>
+
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <h1>Ticket Type</h1>
+<div>
+  <input type="radio" id="child" name="ticket_type" value="child">
+  <label for="child">Child</label>
+</div>
+
+<div>
+  <input type="radio" id="adult" name="ticket_type" value="adult">
+  <label for="adult">Adult</label>
+</div>
+
+<div>
+  <input type="radio" id="senior" name="ticket_type" value="senior">
+  <label for="senior">Senior</label>
+</div>
+<div>
+    <input type="radio" id="radomtest" name="ticket_type" value="radomtest" >
+    <label for="radomtest">Random Test:</label>
+</div>
+    </div>
+
+    <h1>Pizza Toppings</h1>
+
+<div>
+  <input type="checkbox" id="sausage" name="topping" value="sausage">
+  <label for="sausage">Sausage</label>
+</div>
+
+<div>
+  <input type="checkbox" id="onions" name="topping" value="onions">
+  <label for="onions">Onions</label>
+</div>
+
+<div>
+  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni" checked>
+  <label for="pepperoni">Pepperoni</label>
+</div>
+
+<div>
+  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+  <label for="mushrooms">Mushrooms</label>
+</div>
+<div>
+    <input type="checkbox" id="newsletter" name="news_letter">
+    <label for="newsletter">Send me the news letter</label>
+  </div>
+  <button type="reset">Reset</button>
+  
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "handwriting";
+    src: 
+        url(./fonts/journal-webfont.woff) format("woff"),
+        url(./fonts/journal-webfont.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font: 1.3rem sans-serif;
+    padding: 0.5rem;
+    margin: 0rem;
+    background: #222;
+}
+
+form {
+position: relative;
+width: 740px;
+height: 498px;
+margin: 0 auto;
+padding: 1em;
+box-sizing: border-box;
+
+}

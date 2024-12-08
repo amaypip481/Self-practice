@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Submission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="speaker-from-header">
+        <h1>Speaker summission</h1>
+        <p><em>Want to speak at our fake conference? fill out this form</em></p>
+    </header>
+    <form action="" method="get" class="speaker-form">
+        <div class="form-row">
+            <label for="full-name"> Full Name:</label>
+            <input name="full-name" id="full-name" type="text" placeholder="Amay Singh">
+        </div>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="amay@example.com">
+
+        </div>
+        <fieldset class="legacy-form-row">
+            <legend >Type of text</legend>
+            <label for="Main-stage" class="radio-label">Main Stage:</label>
+            <input type="radio" name="talk-type" id="Main-stage" value="Main stage">
+            <label for="workshop" class="radio-label">workshop</label>
+            <input type="radio" name="talk-type" id="workshop" value="workshop">
+
+        </fieldset>
+        <div class="form-row">
+            <label for="t-shirt">T-shirt size:</label>
+            <select name="t-shirt" id="t-shirt" aria-placeholder="select size">
+                <option value="XS">Extra small</option>
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra large</option>
+                <option value="XXL">Double extra larger</option>
+            </select>
+
+        </div>
+        <div class='form-row'>
+            <label for='abstract'>Abstract</label>
+            <textarea id='abstract' name='abstract'></textarea>
+            <div class='instructions'>Describe your talk in 500 words or less</div>
+          </div>
+
+          <div class='form-row'>
+            <button>Submit</button>
+          </div>
+    </form>
+</body>
+
+</html>
